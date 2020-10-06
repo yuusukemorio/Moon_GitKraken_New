@@ -17,7 +17,7 @@ public class Camera_Collision : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
         nani_hureta = other.gameObject.name;
     }
 }

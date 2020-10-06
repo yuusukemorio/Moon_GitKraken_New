@@ -50,18 +50,22 @@ public class TextImput : MonoBehaviour
                 umakuittaka();
                 DebugConsoleERROR = "ACCESS GRANTED";
 
+                sakuzyo();
                 pattern = "2";
             }
             else if(pattern == "2" && ImputCode == "open door")
             {
                 umakuittaka();
                 DebugConsoleERROR = "UNLOCKED";
+
+                sakuzyo();
                 pattern = "3";
             }
             else
             {
                 umakuittaka();
                 DebugConsoleERROR = "ERROR";
+                sakuzyo();
             }
             
         }
@@ -149,5 +153,12 @@ public class TextImput : MonoBehaviour
         program = program + "\n";
         program = program + "\n";
         ImputCode = "";
+    }
+
+    void sakuzyo()
+    {
+        program = program.Substring(1000);
+
+        this.GetComponent<Text>().text = program;
     }
 }
