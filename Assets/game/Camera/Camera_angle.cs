@@ -29,6 +29,7 @@ public class Camera_angle : MonoBehaviour
         if (CCscript == "hall_in")
         {
             CVcamera.Priority = 40;
+            //CVcamera
         //    Debug.Log("hallin");
         }
         if (CCscript == "hall_out")
