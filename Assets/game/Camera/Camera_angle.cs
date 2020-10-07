@@ -17,7 +17,6 @@ public class Camera_angle : MonoBehaviour
         //CCscript = camera_hanntei.GetComponent<Camera_Collision> ();
 
         CVcamera = this.gameObject.GetComponent<CinemachineVirtualCamera>();
-
     }
 
 
@@ -28,22 +27,24 @@ public class Camera_angle : MonoBehaviour
         //Debug.Log(CCscript);
         if (CCscript == "hall_in")
         {
-            CVcamera.Priority = 40;
-            //CVcamera
-        //    Debug.Log("hallin");
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = 0;
+            CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = new Vector3(0,1,1.2f);
         }
         if (CCscript == "hall_out")
         {
-        //    Debug.Log("Hello");
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = -0.4f;
+            CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = new Vector3(-20f, 1, 1.2f);
         }
 
         if (CCscript == "tuuro_in")
         {
-        //    Debug.Log("Hello");
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = -0.3f;
+            CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = new Vector3(-20f, 1, 1.2f);
         }
         if (CCscript == "tuuro_out")
         {
-        //    Debug.Log("Hello");
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = 0.3f;
+            CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = new Vector3(0, 1, 1.2f);
         }
     }
 }
