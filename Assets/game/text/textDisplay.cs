@@ -21,7 +21,6 @@ public class TextDisplay : MonoBehaviour
     void Update()
     {
         TimeCount += Time.deltaTime;
-        Debug.Log(TimeCount);
         if (TimeCount >= DisplayTime[textNumber])
         {
             Speaking();

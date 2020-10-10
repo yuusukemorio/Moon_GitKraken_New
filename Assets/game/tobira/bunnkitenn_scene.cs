@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 public class bunnkitenn_scene : MonoBehaviour
 {
 
+    public string huretaka = "no";
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-
         if (other.gameObject.name == "iv")
         {
-            ChangeScene();
+            //ChangeScene();
+            huretaka = "yes";
+            Debug.Log(huretaka);
         }
     }
 

@@ -9,16 +9,22 @@ public class OpeningAndClosing : MonoBehaviour
     public float stop;
     public string direction_LorR;
 
+    string BSscript;
+    public bunnkitenn_scene bunnkitenn;
+
     // Start is called before the first frame update
     void Start()
     {
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.M))
+        BSscript = bunnkitenn.huretaka;
+
+        if (BSscript == "yes")
         {
             if (direction_LorR == "L")
             {
