@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb9098f5863db4743a34d709067f4b66
+guid: 00ad5988e3fbb43eb8af68d60308d421
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
@@ -18,9 +18,6 @@ ModelImporter:
   - first:
       74: -7292289519974569139
     second: Humanoid|IV_OP
-  - first:
-      74: -2253352345157868647
-    second: Humanoid|IV_RBtukamaru2
   - first:
       74: 5169006202158981551
     second: Humanoid|IV_RBtukamu
