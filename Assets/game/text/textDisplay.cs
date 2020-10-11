@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextDisplay : MonoBehaviour
+public class textDisplay : MonoBehaviour
 {
 
     public string[] texts;
