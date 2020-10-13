@@ -51,7 +51,6 @@ public class Camera_angle : MonoBehaviour
             CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = new Vector3(0, 1, 1.2f);
             CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathOffset = new Vector3(3, 1.7f, -13.4f);
             //CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathOffset = new Vector3(3, 2.02f, -13.4f);
-
         }
         if (CCscript == "hall_out")
         {
@@ -59,7 +58,18 @@ public class Camera_angle : MonoBehaviour
             CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = transform.position = new Vector3(-20f, 1, 1.2f);
             CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathOffset = new Vector3(3, 1.7f, -13.4f);
             //CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathOffset = new Vector3(3, 1.7f, -13.4f);
-
+        }
+        if (CCscript == "hall2_in")
+        {
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = -0.3f;
+            CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = transform.position = new Vector3(-20f, 1, 1.2f);
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathOffset = new Vector3(3, 1.7f, -13.4f);
+        }
+        if (CCscript == "hall2_out")
+        {
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = 0f;
+            CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = transform.position = new Vector3(-13.61f, 1, 1.2f);
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathOffset = new Vector3(15, -2.87f, -13.4f);
         }
 
 
