@@ -21,6 +21,7 @@ public class walk : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             CinemaDC.m_Position = CinemaDC.m_Position + speed;
+
         }   
      else if (Input.GetKey(KeyCode.DownArrow))
         {

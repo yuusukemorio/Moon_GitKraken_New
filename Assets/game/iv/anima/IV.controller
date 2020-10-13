@@ -134,8 +134,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: WaitOrWalk
+  - m_ConditionMode: 1
+    m_ConditionEvent: waitwalk
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -9052385612385583916}
@@ -143,9 +143,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.18184888
-  m_TransitionOffset: 0.04089069
-  m_ExitTime: 0.8908907
+  m_TransitionDuration: 0.1066488
+  m_TransitionOffset: 0.95562506
+  m_ExitTime: 0.7963526
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -468,12 +468,12 @@ AnimatorController:
   m_Name: IV
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: WaitOrWalk
-    m_Type: 3
+  - m_Name: waitwalk
+    m_Type: 4
     m_DefaultFloat: 0
-    m_DefaultInt: 1
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_DefaultInt: 0
+    m_DefaultBool: 1
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -731,8 +731,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: WaitOrWalk
+  - m_ConditionMode: 2
+    m_ConditionEvent: waitwalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3081368074747403023}
