@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/preface.unity
     guid: 25d1759857d5d944e8c42ef71f1112a6
+  - enabled: 1
+    path: Assets/Scenes/ED.unity
+    guid: 69e1bd744c76c4143b4f84b5e0dc2542
   m_configObjects: {}

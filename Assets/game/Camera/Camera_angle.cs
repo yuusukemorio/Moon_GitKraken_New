@@ -254,7 +254,7 @@ public class Camera_angle : MonoBehaviour
         }
         if (CCscript == "kurayami2_out")
         {
-            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = -0.44f;
+            CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_AutoDolly.m_PositionOffset = 0f;
             CVcamera.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset = new Vector3(-5.67f, 1, 0);
             CVcamera.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathOffset = new Vector3(-0.72f, 0, 0);
         }
