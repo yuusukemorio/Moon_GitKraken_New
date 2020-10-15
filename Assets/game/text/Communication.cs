@@ -7,11 +7,14 @@ public class Communication : MonoBehaviour
 {
     //[SerializeField]
     public Text textLabel;
-   //[SerializeField]
+    //[SerializeField]
     public TextAsset textFile;
 
     private string textData;
     private string[] splitText;
+
+    float SpeakTime = 0.0f;
+
 
     int TextCount = 0;
     float TimeCount = 0.0f;
@@ -31,18 +34,10 @@ public class Communication : MonoBehaviour
     void Update()
     {
         TimeCount += Time.deltaTime;
-
-        if (Input.GetKeyDown(KeyCode.Tab))
+        for (int x = 0; x <= 10; x++) //正直よろしくない処理。何回セリフを喋らすかをマジックナンバーを用いて手動で入力している。
         {
-            if (TimeCount >= DisplayTime[textNumber])
-            {
-                Speaking();
-                TimeCount = 0;
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            if (TimeCount >= DisplayTime[textNumber])
+            SpeakTime = float.Parse(splitText[TextCount].Substring(0, 3));//最初から三番目までの文字をint型に変換する。
+            if (TimeCount >= SpeakTime)
             {
                 Speaking();
                 TimeCount = 0;
@@ -52,8 +47,8 @@ public class Communication : MonoBehaviour
 
     void Speaking()
     {
-        textLabel.text = splitText[TextCount];
-        TextCount = TextCount + 1;
+        textLabel.text = splitText[TextCount];//textに表示
+        TextCount = TextCount + 1;//セリフの順番
 
     }
 }
