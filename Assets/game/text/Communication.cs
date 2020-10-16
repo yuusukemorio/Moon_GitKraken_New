@@ -64,7 +64,7 @@ public class Communication : MonoBehaviour
 
     void Communication_IVSG(string a, int b)
     {
-        if (CCscript == a)
+        if (a == a)
         {
             TimeCount = 0;
             for (int x = 0; x <= b; x++) //正直よろしくない処理。何回セリフを喋らすかをマジックナンバーを用いて手動で入力している。
