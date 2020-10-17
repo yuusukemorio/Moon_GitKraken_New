@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class textTitle : MonoBehaviour
 {
@@ -12,12 +13,16 @@ public class textTitle : MonoBehaviour
     int displayTextSpeed; //全体のフレームレートを落とす変数
     bool click;//クリック判定
     bool textStop; //テキスト表示を始めるか
+
+    float time = 0.0f;
+    int count = 0;
     void Start()
     {
 
     }
     void Update()
     {
+        time += Time.deltaTime;
         if (textStop == false) //テキストを表示させるif文
         {
             displayTextSpeed++;
@@ -54,9 +59,19 @@ public class textTitle : MonoBehaviour
                 this.GetComponent<Text>().text = displayText;//画面上にdisplayTextを表示
                 click = false;//クリックされた判定を解除
             }
-            if (Input.GetMouseButton(0))//マウスをクリックしたら
+            if (time >= 5.0)//マウスをクリックしたら
             {
                 click = true; //クリックされた判定にする
+                time = 0;
+                count++;
+            }
+            if (count == 6)
+            {
+                this.GetComponent<Text>().fontSize = 20;
+            }
+            if (count == 7)
+            {
+                SceneManager.LoadScene("Game");
             }
         }
     }
