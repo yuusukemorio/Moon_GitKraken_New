@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Communication_New : MonoBehaviour
 {
-    public string textLabel;
+    public Text textLabel;
     [SerializeField]
     private TextAsset textFile;
     private string textData;
@@ -45,13 +45,33 @@ public class Communication_New : MonoBehaviour
             SpeakTime = float.Parse(splitText[TextCount].Substring(0, 3));//最初から三番目までの文字をint型に変換する。
             if (TimeCount >= SpeakTime)
             {
-                textLabel = splitText[TextCount].Substring(4, splitText[TextCount].Length - 4);//配列からTextCoun番目の要素の4番目から全体の長さ-4した場所を求める
+                textLabel.text = splitText[TextCount].Substring(4, splitText[TextCount].Length - 4);//配列からTextCoun番目の要素の4番目から全体の長さ-4した場所を求める
                 TextCount += 1;
                 TimeCount = 0;
             }
-            if (DeleteTimeCount >= 3.5 * 8 )//ここの処理最悪。
+            if (Count_Name == 0)
             {
-                Count_Name++;
+                if (DeleteTimeCount >= 3.5 * 7 + 6)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+            if (Count_Name == 1)
+            {
+                if (DeleteTimeCount >= 3.5 * 5 + 5.5*7)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+            if (Count_Name == 2)
+            {
+                if (DeleteTimeCount >= 3.5 * 18 + 1)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
             }
         }
     }
@@ -64,7 +84,7 @@ public class Communication_New : MonoBehaviour
             if (TimeCount >= SpeakTime)
             {
                 SpeakTime = float.Parse(splitText[TextCount].Substring(0, 3));//最初から三番目までの文字をint型に変換する。
-                textLabel = splitText[TextCount].Substring(4, splitText[TextCount].Length - 4);//配列からTextCoun番目の要素の4番目から全体の長さ-4した場所を求める
+                textLabel.text = splitText[TextCount].Substring(4, splitText[TextCount].Length - 4);//配列からTextCoun番目の要素の4番目から全体の長さ-4した場所を求める
 
                 TextCount += 1;
                 TimeCount = 0;
