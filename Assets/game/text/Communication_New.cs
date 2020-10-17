@@ -49,7 +49,7 @@ public class Communication_New : MonoBehaviour
                 TextCount += 1;
                 TimeCount = 0;
             }
-            if (Count_Name == 0)
+            if (Count_Name == 0)//OP,おはよ
             {
                 if (DeleteTimeCount >= 3.5 * 7 + 6)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
                 {
@@ -57,7 +57,7 @@ public class Communication_New : MonoBehaviour
                     DeleteTimeCount = 0;
                 }
             }
-            if (Count_Name == 1)
+            if (Count_Name == 1)//今日も...行くの?
             {
                 if (DeleteTimeCount >= 3.5 * 5 + 5.5*7)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
                 {
@@ -65,14 +65,63 @@ public class Communication_New : MonoBehaviour
                     DeleteTimeCount = 0;
                 }
             }
-            if (Count_Name == 2)
+            if (Count_Name == 2)//宇宙服の点検嫌!&アナログっていいよね
             {
-                if (DeleteTimeCount >= 3.5 * 18 + 1)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                if (DeleteTimeCount >= 3.5 * 14 + 4.5 * 4 - 1)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
                 {
                     Count_Name++;
                     DeleteTimeCount = 0;
                 }
             }
+            if (Count_Name == 3)//エネルギー残量大丈夫?
+            {
+                if (DeleteTimeCount >= 3.5 * 6)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+            if (Count_Name == 4)//スグって読むねんで&分析家結果&映画のセリフ言い合い
+            {
+                if (DeleteTimeCount >= 3.5 * 19 + 4.5 * 15)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+            if (Count_Name == 5)//地下街やな嫌いやわ...
+            {
+                if (DeleteTimeCount >= 3.5 * 3)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+            if (Count_Name == 6)//ネオン消えへんな...
+            {
+                if (DeleteTimeCount >= 3.5 * 3 + 4.5 * 2 + 5.0 * 1)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+            if (Count_Name == 7)//核兵器の記録見つかったで
+            {
+                if (DeleteTimeCount >= 3.5 * 10)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+            if (Count_Name == 8)//ED,最深部ついたぜ!
+            {
+                if (DeleteTimeCount >= 3.5 * 9 + 1)//ここの処理最悪。結局諦めてサブで計測して、特定の数値になったらストップするようにした。
+                {
+                    Count_Name++;
+                    DeleteTimeCount = 0;
+                }
+            }
+
         }
     }
 
