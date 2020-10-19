@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texts:
-  - "\u300C\u661F\u3092\u7D99\u3050\u3082\u306E\u300D"
+  - 
   - Creator - Yusuke Morio
   - ' THANK YOU FOR PLAYING'
 --- !u!1 &1658937021
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 1810464425}
   - component: {fileID: 1810464424}
   - component: {fileID: 1810464423}
-  - component: {fileID: 1810464426}
+  - component: {fileID: 1810464427}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -545,7 +545,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -36.124, y: 166.356, z: 0}
---- !u!114 &1810464426
+--- !u!114 &1810464427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -554,6 +554,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1810464422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff598fe558faf034d9b067b03d5efef6, type: 3}
+  m_Script: {fileID: 11500000, guid: d44d09c2187947840ac85b81469edf4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -18,17 +18,17 @@ public class WaitOrWalk : MonoBehaviour
     void Update()
 
     {
-        Transform myTransform = this.transform;
+        //Transform myTransform = this.transform;
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
             anim.SetBool("waitwalk",true);
-            //myTransform.rotation = Quaternion.Euler(0, 0, 0);
+            //this.transform.rotation = Quaternion.Euler(0, 90, 0);
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
             anim.SetBool("waitwalk", true);
-            //myTransform.rotation = Quaternion.Euler(0, 180, 0);
+            //this.transform.rotation = Quaternion.Euler(0, -90, 0);
         }
         else
         {
