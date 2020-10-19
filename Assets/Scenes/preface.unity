@@ -593,7 +593,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F7C\u3089\u306F\u661F\u3092\u98DF\u3044\u6F70\u3057\u305F\n\u300C\u3082\u3046\u3053\u3093\u306A\u661F\u306B\u306A\u3093\u3066\u5C45\u3089\u308C\u306A\u3044\u300D\n\n\u79C1\u306F\u4E00\u4EBA\u3001\u3053\u306E\u661F\u3078\u6B8B\u3063\u305F\n\n\u300C\u661F\u3092\u7D99\u3050\u3082\u306E\u300D"
+  m_Text: 
 --- !u!222 &1870186755
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -716,6 +716,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1958642152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a69cd3e7aa18d99449edccb4db3bd088, type: 3}
+  m_Script: {fileID: 11500000, guid: d44d09c2187947840ac85b81469edf4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EDRoll.unity
     guid: fb6a0b833ddb1744ca1d38641c5850c8
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 6579a7eaddab3564cae751d66fd0c986
   m_configObjects: {}

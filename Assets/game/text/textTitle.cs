@@ -26,7 +26,7 @@ public class textTitle : MonoBehaviour
         if (textStop == false) //テキストを表示させるif文
         {
             displayTextSpeed++;
-            if (displayTextSpeed % 15 == 0)//15回に一回プログラムを実行するif文
+            if (displayTextSpeed % 2 == 0)//15回に一回プログラムを実行するif文
             {
 
                 if (textCharNumber != texts[textNumber].Length)//もしtext[textNumber]の文字列の文字が最後の文字じゃなければ
@@ -59,7 +59,7 @@ public class textTitle : MonoBehaviour
                 this.GetComponent<Text>().text = displayText;//画面上にdisplayTextを表示
                 click = false;//クリックされた判定を解除
             }
-            if (time >= 5.0)//マウスをクリックしたら
+            if (time >= 4)//マウスをクリックしたら
             {
                 click = true; //クリックされた判定にする
                 time = 0;
