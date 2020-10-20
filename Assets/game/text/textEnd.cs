@@ -65,7 +65,7 @@ public class textEnd : MonoBehaviour
                 time = 0;
                 count++;
             }
-            if (count == 3)
+            if (count == 4)
             {
 
             }
