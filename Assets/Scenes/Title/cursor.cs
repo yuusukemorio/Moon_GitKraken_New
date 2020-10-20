@@ -10,21 +10,28 @@ public class cursor : MonoBehaviour
     void Start()
     {
         rect = GetComponent<RectTransform>();
-        rect.localPosition = new Vector3(-20.49f, -25.49f, 0);
+        rect.localPosition = new Vector3(-15.28607f, -361.0522f, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (clear.GameClear == "yes")
         {
-            rect.localPosition = new Vector3(-20.49f, -25.49f, 0);
-            //this.transform.position = new Vector3(-20.49f, -25.49f, 0);
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                rect.localPosition = new Vector3(-15.28607f, -361.0522f, 0);
+                //this.transform.position = new Vector3(-20.49f, -25.49f, 0);
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                rect.localPosition = new Vector3(-105f, -609f, 0);
+                //this.transform.position = new Vector3(-38.9f, -78.1f, 0);
+            }
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        else
         {
-            rect.localPosition = new Vector3(-38.9f, -78.1f, 0);
-            //this.transform.position = new Vector3(-38.9f, -78.1f, 0);
+
         }
     }
 }

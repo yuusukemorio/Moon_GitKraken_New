@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 6579a7eaddab3564cae751d66fd0c986
+  - enabled: 1
+    path: Assets/Scenes/Title2.unity
+    guid: 9369654c89f46470b880c917a1761486
+  - enabled: 1
+    path: Assets/Scenes/Postscript.unity
+    guid: ee81cea1ec42f45e79fba817145851ef
   m_configObjects: {}

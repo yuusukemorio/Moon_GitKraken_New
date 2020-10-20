@@ -33,7 +33,6 @@ public class Communication_New : MonoBehaviour
     void Update()
     {
         CNTscript = CNT.Communication_name;
-        Debug.Log(TimeCount);
 
         if (CNTscript == hureta_Name[Count_Name])
         {
